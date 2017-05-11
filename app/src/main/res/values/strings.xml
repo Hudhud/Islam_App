@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 Iranian Supreme Council of ICT, The FarsiTel Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASICS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+	<string name="app_name">Location Compass</string>
+	
+	<string name="settings_label">Settings</string>
+	<string name="prefs_menu_title">Settings</string>
+	<string name="about_menu_title">About</string>
+
+	<string name="screen_down_text">Please hold your phone horizontally and toward upside so that it\'s compass could work. Can\'t determine the direction of the north accurately now.</string>
+
+	<string name="no_location_yet">Please wait. Detecting your location...\nOr you can select your city in the Settings.</string>
+	<string name="geo_location_info">Location Data Acquired.</string>
+	<string name="latitude_north">N</string>
+	<string name="latitude_south">S</string>
+	<string name="longitude_east">E</string>
+	<string name="longitude_west">W</string>
+
+	<string name="gps_status">Use GPS</string>
+	<string name="gps_status_summary">Enables using GPS for getting your location.</string>
+
+	<string name="gps_prompt">Use GPS</string>
+	<string name="gps_summary">Enables using GPS for getting your location.</string>
+
+	<string name="state_location_title"></string>
+	<string name="state_location_summary"></string>
+
+	<string name="about_title_text"></string>
+
+	<string name="about_text"><br/>
+
+   <br/><br/>
+    Visit <font fgcolor="#ff749c00"><a href="http://farsitel.com/fa/" fgcolor="749C00FF">http://farsitel.com/</a></font> to learn more about 
+   <font fgcolor="#ffffffff"><b>FarsiTel</b></font>.
+   <br/><br/>
+   </string>
+
+	<!-- Do not translate next two tag, it's used by program for other reasons -->
+	<string name="gps_pref_key">GPS_LOCATION_PREF</string>
+	<string name="state_location_pref_key">state_LOCATION_PREF</string>
+
+	<string name="release_date">March 30, 2011\n</string>
+	<string name="version">Version 1.22</string>
+</resources>
