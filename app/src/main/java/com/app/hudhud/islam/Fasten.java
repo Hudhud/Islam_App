@@ -33,8 +33,8 @@ public class Fasten extends Fragment {
         intro = (TextView) view.findViewById(R.id.introtilprofeter);
 
         intro.setText("Enhver ansvarlig muslim er pålagt at faste Ramadan-måneden, dog er fasten ugyldig fra kvinden under efterfødsels - eller menstruationsperiode; de skal dog begge indhente de mistede dage. \n" +
-                "\nAt bryde fasten er tilladt for den syge person, den gravide eller ammende kvinde, der ikke kan udholde fasten samt den, der er på en lang rejse (ca. 50km) selvom vedkommende ikke møder strabadser under sin rejse." +
-                " Det er dem dog forpligtet at indhente de mistede dage. \n");
+                "\nAt bryde fasten er tilladt for den syge person, der ikke kan udholde fasten, den gravide eller ammende kvinde, der frygter skade for sig selv eller barnet samt den, der er på en lang rejse (ca. 50km) selvom vedkommende ikke møder strabadser under sin rejse." +
+                " Det er dem dog forpligtet at indhente de mistede dage.");
         return view;
     }
 }

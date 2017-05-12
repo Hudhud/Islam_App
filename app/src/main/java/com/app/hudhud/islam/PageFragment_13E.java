@@ -49,7 +49,7 @@ public class PageFragment_13E extends Fragment {
         text[2] = "Allah har ingen begyndelse på Sin eksistens og intet andet end Ham er evigt. Han eksisterede før Han skabte alle skabningerne som f.eks. tid og sted.\n\n"+
         "Profeten, må Allah ophøje hans rang, sagde: ";
 
-        text[3] = "Allah er uophørlig dvs. Han ingen slutning har på Sin eksistens. Han forgår ikke, ej heller udslettes Han.\n\nAllah, være ophøjet, siger i Surat Al-Hadid, vers 3:";
+        text[3] = "Allah er uophørlig dvs. Han ingen slutning har på Sin eksistens. Han forgår ikke, ej heller udslettes Han.\n\nAllah, være ophøjet, sagde i Surat Al-Hadid, vers 3:";
 
         text[4] = "Allah har ikke brug for nogen eller noget, mens alle skabninger har brug for Ham.\n\n"+ "Allah, være ophøjet, sagde i Surat Al-Ikhlas, vers 2:";
 

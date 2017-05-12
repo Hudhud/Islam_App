@@ -29,7 +29,7 @@ public class Fasten_Sojler extends AppCompatActivity {
         setContentView(R.layout.tabs);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new SampleFragmentPagerAdapter_ProfeterE(getSupportFragmentManager()));
+        viewPager.setAdapter(new SampleFragmentPagerAdapter_Fasten_Sojler(getSupportFragmentManager()));
 
         // Give the PagerSlidingTabStrip the ViewPager
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);

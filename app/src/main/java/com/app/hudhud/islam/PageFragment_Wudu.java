@@ -64,7 +64,7 @@ public class PageFragment_Wudu extends Fragment implements View.OnClickListener{
         text[1] = "Vaske af hænderne 3 gange til og med håndleddene ";
         text[2] = "Skylde munden 3 gange";
         text[3] = "Skylde næsen 3 gange";*/
-        text[0] = "Wudu' har en række søjler og et antal sunan. Uden alle søjlerne er wudu' ugyldig, hvorimod man kan undlade sunan uden at wudu gøres ugyldigt, omend man mister belønning for disse sunan.\n\nI det følgende gennemgås søjlerne.";
+        text[0] = "Wudu' har en række søjler og et antal sunan. Uden alle søjlerne er wudu' ugyldig, hvorimod man kan undlade sunan uden at wudu' gøres ugyldig, omend man mister belønning for disse sunan.\n\nI det følgende gennemgås søjlerne.";
         text[1] = "At udføre en hensigt f.eks. \"Nawaytul wudu' \" dvs. \"Jeg har til hensigt at udføre wudu' lillah (for Allah's skyld)\" e.l.";
         text[2] = "At vaske ansigtet, fra den normale hårgrænse til hagen og fra det ene øre til det andet, både håret og huden, men ikke indersiden af en mands tætte skæg og tætte bakkenbarter.";
         text[3] = "At vaske hænderne og underarmene til og med albuerne og det, der er på dem.";

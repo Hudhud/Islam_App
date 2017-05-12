@@ -71,7 +71,7 @@ public class PageFragment_Bon extends Fragment implements View.OnClickListener{
 
 
         String [] text = new String [19];
-        text[0] = "Bønnen har en række søjler og et antal sunan. Uden alle søjlerne er bønnen ugyldig, hvorimod man kan undlade sunan uden at bønnen gøres ugyldigt, omend man mister belønning for disse sunan\n\nI det følgende gennemgås søjlerne.";
+        text[0] = "Bønnen har en række søjler og et antal sunan. Uden alle søjlerne er bønnen ugyldig, hvorimod man kan undlade sunan uden at bønnen gøres ugyldig, omend man mister belønning for disse sunan\n\nI det følgende gennemgås søjlerne.";
         text[1] = "At have en hensigt i hjertet om at udføre bønnen. Man skal specificere bønnen, når den har en speciel anledning eller tid, samt at have en hensigt om at udføre forpligtelsen i de pligtige bønner.";
         text[2] = "At sige ”Allahu Akbar” (den indledende takbirah) mindst så højt, at man kan høre sig selv, som det er påkrævet i enhver mundtlig søjle.";
         text[3] = "At stå op (qiyam) i de forpligtede bønner, hvis man magter det.";

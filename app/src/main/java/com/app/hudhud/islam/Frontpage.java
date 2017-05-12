@@ -179,6 +179,14 @@ public class Frontpage extends AppCompatActivity {
                             intent = new Intent(getApplicationContext(), Fasten_Sojler.class);
                             startActivity(intent);
                             break;
+                        case 2:
+                            Fragment fragment1 = new Fasten_Dage();
+                            getFragmentManager().beginTransaction()
+                                    .add(R.id.kontaktfrag, fragment1)
+                                    .addToBackStack(null)
+                                    .commit();
+                            switcher.setDisplayedChild(0);
+                            image.setVisibility(View.GONE);
 
                         default:
                             break;
@@ -277,6 +285,7 @@ public class Frontpage extends AppCompatActivity {
         List<String> fasten = new ArrayList<String>();
         fasten.add("Hvem er pålagt til at faste?");
         fasten.add("Fastens søjler");
+        fasten.add("Dagene man ikke må faste");
 
         listDataChild.put(listDataHeader.get(0), first); // Header, Child data
         listDataChild.put(listDataHeader.get(1), profeterne);
