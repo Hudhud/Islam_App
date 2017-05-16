@@ -40,7 +40,7 @@ public class Kontakt extends Fragment implements View.OnClickListener{
         Intent mailIntent = new Intent(Intent.ACTION_SEND);
         mailIntent.putExtra(Intent.EXTRA_EMAIL, reciever);
         mailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
-        mailIntent.putExtra(Intent.EXTRA_TEXT, msg.getText());
+        mailIntent.putExtra(Intent.EXTRA_TEXT, msg.getText().toString());
         mailIntent.setType("message/rfc822");
         startActivity(Intent.createChooser(mailIntent, "Vælg en applikation til at sende din mail med"));
     }
