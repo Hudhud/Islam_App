@@ -25,7 +25,7 @@ public class Profet extends Fragment {
         intro.setText("En profet er et menneske, udvalgt af Allah, til at videregive budskabet om islam.\n" +
                 "I alt har der eksisteret ca. 124.000 profeter. Iblandt det, profeterne har tilfælles, er, at de alle kom med religionen islam." +
                 " Nogle af profeterne var sendebud, hvilket er en profet, som har fået åbenbaret en ny lovgivning.\n" +
-                "Profeten Adam var det første sendbud og den første profet, mens profeten Muhammad var det sidste sendebud og den sidste profet.");
+                "Profeten Adam var det første sendebud og den første profet, mens profeten Muhammad var det sidste sendebud og den sidste profet.");
 
         return view;
     }

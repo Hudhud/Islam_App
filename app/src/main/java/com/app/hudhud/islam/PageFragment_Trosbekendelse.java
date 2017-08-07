@@ -47,7 +47,7 @@ public class PageFragment_Trosbekendelse extends Fragment {
                 "\nBetydningen af ”Ash-hadu allaa ilaaha illallaah” (Jeg bevidner, at der ingen anden guddom end Allah er) er: Jeg ved, tror dvs. godtager i mit hjerte, underkaster mig samt erklærer med min tunge, at intet er tilbedt med rette undtagen Allah. Dvs. " +
                 "ingen fortjener at blive tilbedt - hvilket vil sige at man ydmyger sig selv til det yderste for - undtagen Allah. " +
                 "\n\n" +
-                "Betydningen af det andet vidnesbyrd, som lyder ”Ash-hadu anna Muhammadar-rasulullaah” (Jeg bevidner, at Muhammad er Allahs profet), " +
+                "Betydningen af det andet vidnesbyrd, som lyder ”Ash-hadu anna Muhammadar-rasuulullaah” (Jeg bevidner, at Muhammad er Allahs profet), " +
                 "må Allah ophøje hans rang, er: Jeg ved, tror, godtager, underkaster mig i mit hjerte og erklærer " +
                 "med min tunge, at Muhammad, søn af ^Abdullah - qurayshianeren (dvs. den som stammer fra den mest ærværdige stamme Quraysh), " +
                 "er Allahs skabning og sendebud til alle skabninger blandt mennesker og djin." +
@@ -69,7 +69,7 @@ public class PageFragment_Trosbekendelse extends Fragment {
         tvTitle2.setText(text2[mPage]);
 
         String[] text3 = new String [2];
-        text3[0] = "”Ash-hadu allaa ilaaha illallaah wa ash-hadu anna Muhammadar-rasulullaah”\n\nhvilket betyder: \n\"Jeg bevidner, at der ingen anden guddom end Allah er, og bevidner, at \n" +
+        text3[0] = "”Ash-hadu allaa ilaaha illallaah wa ash-hadu anna Muhammadar-rasuulullaah”\n\nhvilket betyder: \n\"Jeg bevidner, at der ingen anden guddom end Allah er, og bevidner, at \n" +
                 "Muhammad er Allahs sendebud\".\n\nMan kan også fremsige et andet udtryk med en lignende betydning såsom ”Der er ingen anden guddom end Gud og Muhammad er Guds profet”.";
 
         tvTitle3.setText(text3[mPage]);

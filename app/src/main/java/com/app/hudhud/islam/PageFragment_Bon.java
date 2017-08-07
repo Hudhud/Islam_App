@@ -96,7 +96,7 @@ public class PageFragment_Bon extends Fragment implements View.OnClickListener{
                 "\"At-tahiyyatul-mubarakatus-salawatut-tayyibatu lillah,\n" +
                 "As-salamu ^alayka ayyuhan-nabiyyu wa rahmatullahi wa barakatuh,\n" +
                 "as-salamu ^alayna wa ^ala ^ibadil-lahis-salihin\n" +
-                "Ash hadu alla ilaha illal-lah wa ash hadu anna Muhammadar-rasulullah\"";
+                "Ash hadu alla ilaha illal-lah wa ash hadu anna Muhammadar-rasuulullah\"";
         text[15] = "At sige As-Salatu ^alan-nabiyy, må Allah ophøje hans rang. \n\n\"Allahumma salli ^ala Muhammad\"";
         text[16] = "At sige den afsluttende salam\n\"As-salamu ^alaykum\"";
         text[17] = "At overholde rækkefølgen for søjlerne. Bevidst udeladelse af denne gennemgåede rækkefølge ugyldiggør bønnen.";
