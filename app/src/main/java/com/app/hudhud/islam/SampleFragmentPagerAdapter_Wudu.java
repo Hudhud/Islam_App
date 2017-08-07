@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class SampleFragmentPagerAdapter_Wudu extends FragmentPagerAdapter {
     final int PAGE_COUNT = 7;
-    private String tabTitles[] = new String[] {"Intro","Hensigt", "Asnigt", "Arme", "Hoved", "Fødder", "Rækkefølgen"};
+    private String tabTitles[] = new String[] {"Intro","Hensigt", "Ansigt", "Arme", "Hoved", "Fødder", "Rækkefølgen"};
 
     public SampleFragmentPagerAdapter_Wudu(FragmentManager fm) {
         super(fm);
