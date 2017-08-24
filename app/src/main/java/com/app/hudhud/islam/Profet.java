@@ -18,7 +18,7 @@ public class Profet extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_profet, container, false);
-        getActivity().setTitle("Hvad er en profet?");
+        ((Frontpage) getActivity()).setActionBarTitle("Hvad er en profet?");
 
         intro = (TextView) view.findViewById(R.id.introtilprofeter);
 

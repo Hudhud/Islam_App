@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static com.app.hudhud.islam.R.attr.title;
+
 /**
  * Created by hudhud on 2/7/16.
  */
@@ -76,6 +78,7 @@ public class Frontpage extends AppCompatActivity {
             public void onGroupCollapse(int groupPosition) {
             }
         });
+
 
         // Listview on child click listener
         expListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
@@ -162,6 +165,15 @@ public class Frontpage extends AppCompatActivity {
                             intent = new Intent(getApplicationContext(), Bon_Afbrydelser.class);
                             startActivity(intent);
                             break;
+                        case 3:
+                            Fragment fragment = new Bontider();
+                            getFragmentManager().beginTransaction()
+                                    .add(R.id.kontaktfrag, fragment)
+                                    .addToBackStack(null)
+                                    .commit();
+                            switcher.setDisplayedChild(0);
+                            image.setVisibility(View.GONE);
+                            break;
                     }
                 }
                 if (groupPosition == 5){
@@ -203,12 +215,12 @@ public class Frontpage extends AppCompatActivity {
         if (getFragmentManager().getBackStackEntryCount() == 0) {
             this.finish();
             switcher.setDisplayedChild(1);
-            getSupportActionBar().setTitle("Islam");
+            getSupportActionBar().setTitle("Islams Fundament");
             image.setVisibility(View.VISIBLE);
         } else {
             getFragmentManager().popBackStack();
             switcher.setDisplayedChild(1);
-            getSupportActionBar().setTitle("Islam");
+            getSupportActionBar().setTitle("Islams Fundament");
             image.setVisibility(View.VISIBLE);
         }
     }
@@ -217,6 +229,10 @@ public class Frontpage extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         new MenuInflater(this).inflate(R.menu.menu_frontpage, menu);
         return (super.onCreateOptionsMenu(menu));
+    }
+
+    public void setActionBarTitle(String title){
+        getSupportActionBar().setTitle(title);
     }
 
     @Override
@@ -281,6 +297,7 @@ public class Frontpage extends AppCompatActivity {
         boennen.add("Søjler");
         boennen.add("Betingelser");
         boennen.add("Afbrydelser");
+        boennen.add("Bøntider");
 
         List<String> fasten = new ArrayList<String>();
         fasten.add("Hvem er pålagt til at faste?");

@@ -22,7 +22,7 @@ public class Kontakt extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_kontakt, container, false);
 
-        getActivity().setTitle("Kontakt os");
+        ((Frontpage) getActivity()).setActionBarTitle("Kontakt os");
 
         sendmail = (Button) view.findViewById(R.id.sendknap);
         sendmail.setOnClickListener(this);

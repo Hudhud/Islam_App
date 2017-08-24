@@ -28,7 +28,7 @@ public class Fasten extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_profet, container, false);
-        getActivity().setTitle("Hvem er pålagt til at faste?");
+        ((Frontpage) getActivity()).setActionBarTitle("Hvem er pålagt til at faste?");
 
         intro = (TextView) view.findViewById(R.id.introtilprofeter);
 
