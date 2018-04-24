@@ -166,13 +166,8 @@ public class Frontpage extends AppCompatActivity {
                             startActivity(intent);
                             break;
                         case 3:
-                            Fragment fragment = new Bontider();
-                            getFragmentManager().beginTransaction()
-                                    .add(R.id.kontaktfrag, fragment)
-                                    .addToBackStack(null)
-                                    .commit();
-                            switcher.setDisplayedChild(0);
-                            image.setVisibility(View.GONE);
+                            intent = new Intent(getApplicationContext(), Bontider.class);
+                            startActivity(intent);
                             break;
                     }
                 }

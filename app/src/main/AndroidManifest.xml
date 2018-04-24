@@ -46,6 +46,9 @@
             android:name="com.app.hudhud.islam.Bon_Betingelser"></activity>
         <activity
             android:screenOrientation="portrait"
+            android:name="com.app.hudhud.islam.Bontider"></activity>
+        <activity
+            android:screenOrientation="portrait"
             android:name="com.app.hudhud.islam.Fasten_Sojler"></activity>
 
 

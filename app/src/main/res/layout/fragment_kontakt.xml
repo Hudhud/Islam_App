@@ -20,7 +20,7 @@
         android:paddingTop="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:hint="Hvis du har feedback, nogle spørgsmål eller vil booke en imam til f.eks. en lektion, ægteskabskontrakt eller andet, så er du velkommen til at skrive. Vi besvarer mailen hurtigst muligt."/>
+        android:hint="Hvis du har feedback eller nogle spørgsmål, er du velkommen til at skrive. Vi besvarer mailen hurtigst muligt."/>
 
     <Button
         android:layout_width="144dp"

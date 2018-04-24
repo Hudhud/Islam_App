@@ -2,22 +2,256 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.gradle\caches\modules-2\files-2.1\com.sun.mail\android-mail\1.5.6\939e074a4f4ce8365acc9a6c2d9c6004ce4029a5\android-mail-1.5.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="939e074a4f4ce8365acc9a6c2d9c6004ce4029a5">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\android-mail-1.5.6_2770c1040b4ec870568519ec5ec0d79662fbc27e.jar" />
+    </item>
+    <item
         is-multidex="true"
-        jar="C:\Users\Hadi\Desktop\App\Islam\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\HH-PC\.gradle\caches\modules-2\files-2.1\com.sun.mail\android-mail\1.5.6\939e074a4f4ce8365acc9a6c2d9c6004ce4029a5\android-mail-1.5.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="939e074a4f4ce8365acc9a6c2d9c6004ce4029a5">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\android-mail-1.5.6_2770c1040b4ec870568519ec5ec0d79662fbc27e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\de62dd91bb7e19227ba0991f954b0cfb29a1a17c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e04f28ac2dd9bbe48ced6fc87fedf46c2586f5d6">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_98fabbb3ba0efa68e161f4d5f35a60d85d278366.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\b1547c6196e6fbfc2e021ceaefbbda82a3bfbb2a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29e451fd5bcc265989bf80afd4f149d95d72e7d">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a60fed036b63ac64728bbcdbc72df62ad07ed81c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\de62dd91bb7e19227ba0991f954b0cfb29a1a17c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e04f28ac2dd9bbe48ced6fc87fedf46c2586f5d6">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_98fabbb3ba0efa68e161f4d5f35a60d85d278366\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\b1547c6196e6fbfc2e021ceaefbbda82a3bfbb2a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29e451fd5bcc265989bf80afd4f149d95d72e7d">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_a60fed036b63ac64728bbcdbc72df62ad07ed81c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\6d88af9b506465674dd038188c917eb5eb1fa83a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_84e2138577b8b26828d6a83a9ef8bb29f94b26fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\aa62ea9720dbf12b8e034f5b68dfbc9afff705ba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b77e50b3c31d0fc64148530f7077f79ec114b5b9">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_7099de4f3983c78229321f1da4d9d2590d1779ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\6d88af9b506465674dd038188c917eb5eb1fa83a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_84e2138577b8b26828d6a83a9ef8bb29f94b26fa.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\aa62ea9720dbf12b8e034f5b68dfbc9afff705ba\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b77e50b3c31d0fc64148530f7077f79ec114b5b9">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7099de4f3983c78229321f1da4d9d2590d1779ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\f1add9255cff7718e6627803857c016f997a2171\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2deeac83ffa1304264bc755c2ddb84e7a7fa239">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_a3855dcdc44fe432a04d7a4b64c124b69cb93119.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\5c609f6e3ff347b02b5cf3c881780d85a4d4a7f8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1f52d555623369b225a55ff4b48dcb1807eaf848\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\f1add9255cff7718e6627803857c016f997a2171\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c2deeac83ffa1304264bc755c2ddb84e7a7fa239">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a3855dcdc44fe432a04d7a4b64c124b69cb93119\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\be563d36ba87b122eaac326a4aa862af8087bf10\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05e3d15c623cd98f0eb43c8249fb6151fae0786c">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3222ed3a6aa1eef15871ccf5b62fc600e030fa47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\c4dceca2f96b5556c1ea01150b0cefb8f048ee71\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4961be1437163ab598620a3c907c0f3432936f51">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5846b68643d1448253253cdd7e5ffbfcc5c31b1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\25.4.0\f6a2fc748ae3769633dea050563e1613e93c135e\support-annotations-25.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f6a2fc748ae3769633dea050563e1613e93c135e">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\support-annotations-25.4.0_e2eafed490e7bd0154a847f3c8842679340113ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\5c609f6e3ff347b02b5cf3c881780d85a4d4a7f8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_1f52d555623369b225a55ff4b48dcb1807eaf848.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\be563d36ba87b122eaac326a4aa862af8087bf10\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05e3d15c623cd98f0eb43c8249fb6151fae0786c">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_3222ed3a6aa1eef15871ccf5b62fc600e030fa47.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ed9da91a80f494e8f8a6e6d3018855452ef37576">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c460a93b8299547160e2bf8f8334fde781837bd0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\25.4.0\f6a2fc748ae3769633dea050563e1613e93c135e\support-annotations-25.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f6a2fc748ae3769633dea050563e1613e93c135e">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.4.0_e2eafed490e7bd0154a847f3c8842679340113ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\c4dceca2f96b5556c1ea01150b0cefb8f048ee71\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4961be1437163ab598620a3c907c0f3432936f51">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_5846b68643d1448253253cdd7e5ffbfcc5c31b1c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
-        <dex dex="C:\Users\Hadi\Desktop\App\Islam\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_024e248c50b1bbd752856bf9b5814bea00c4cf6b\classes.dex" />
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_86a1b0c411cee18be32c4534b9b36016fd1b9192\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Hadi\Desktop\App\Islam\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\HH-PC\.android\build-cache\fe2af37d6d58f8184653ea97ac1e2dcc29bddc44\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="0a57b93d86e9d0f47acea74d4eb58ab787ec372f">
-        <dex dex="C:\Users\Hadi\Desktop\App\Islam\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_76d1c22b4520c77161f38492f4c6cae07c11f52f\classes.dex" />
+        sha1="a64026daf4819a589aea776f5deb19b257a104d1">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_36176166f39b98e0143dbb7e3d5a2bbae5127e4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\fe2af37d6d58f8184653ea97ac1e2dcc29bddc44\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a64026daf4819a589aea776f5deb19b257a104d1">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_36176166f39b98e0143dbb7e3d5a2bbae5127e4f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.gradle\caches\modules-2\files-2.1\com.sun.mail\android-activation\1.5.6\34c941857c08ff1d6af9a43a8806342883b2a8e1\android-activation-1.5.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34c941857c08ff1d6af9a43a8806342883b2a8e1">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\android-activation-1.5.6_c7249711d2ab3150aabb2b1c098c00b150e0e633\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.gradle\caches\modules-2\files-2.1\com.sun.mail\android-activation\1.5.6\34c941857c08ff1d6af9a43a8806342883b2a8e1\android-activation-1.5.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34c941857c08ff1d6af9a43a8806342883b2a8e1">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\android-activation-1.5.6_c7249711d2ab3150aabb2b1c098c00b150e0e633.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\HH-PC\.android\build-cache\d7b087f5851f471221c7e1f765a721f0aa1f02ea\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a7a0aa678c3bbadb67fb41df9e107f7ee9087902">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\pre-dexed\debug\classes_9dd6fa7f82e930db85a113dbe4949eda80d0c56a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HH-PC\.android\build-cache\d7b087f5851f471221c7e1f765a721f0aa1f02ea\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a7a0aa678c3bbadb67fb41df9e107f7ee9087902">
+        <dex dex="D:\AndroidStudioProjects\Islam_App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9dd6fa7f82e930db85a113dbe4949eda80d0c56a\classes.dex" />
     </item>
 
 </items>
