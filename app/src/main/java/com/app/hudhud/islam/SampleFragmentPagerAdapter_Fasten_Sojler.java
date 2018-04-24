@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class SampleFragmentPagerAdapter_Fasten_Sojler extends FragmentPagerAdapter {
     final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "Hensigten", "Fastens afbrydelser"};
+    private String tabTitles[] = new String[] { "Hensigten", "Afbrydelser"};
 
     public SampleFragmentPagerAdapter_Fasten_Sojler(FragmentManager fm) {
         super(fm);

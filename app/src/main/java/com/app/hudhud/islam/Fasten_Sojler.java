@@ -35,6 +35,7 @@ public class Fasten_Sojler extends AppCompatActivity {
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
 
         // Attach the view pager to the tab strip
+        tabsStrip.setShouldExpand(true);
         tabsStrip.setViewPager(viewPager);
 
         getSupportActionBar().setTitle("Fastens søjler");

@@ -31,6 +31,7 @@ public class Wudu_Betingelser extends AppCompatActivity {
         PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
 
         // Attach the view pager to the tab strip
+        tabsStrip.setShouldExpand(true);
         tabsStrip.setViewPager(viewPager);
 
         getSupportActionBar().setTitle("Betingelser for renselse (Taharah)");
