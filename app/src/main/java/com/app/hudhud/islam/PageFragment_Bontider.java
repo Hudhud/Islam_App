@@ -48,7 +48,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sa
                 " af en tilfældig genstand bliver lige så lang som en genstands egen længde adderet " +
                 "med længden af kulminationsskyggen. Kulminationsskyggen er den målte skygge, når " +
                 "solen er ved sit højeste punkt i løbet af en dag.\n\n" +
-                "Den anden bøn er eftermiddagsbønnen (Al-^asr) \nDens tid varer fra middagsbønnens " +
+                "Den anden bøn er eftermiddagsbønnen (Al-^Asr) \nDens tid varer fra middagsbønnens " +
                 "udtrædelse til solnedgang (når hele solskiven er forsvundet).\n\n" +
                 "Den tredje bøn er solnedgangsbønnen (Al-Maghrib) \nDens tid indtræder fra " +
                 "eftermiddagsbønnens udtrædelse, og udtræder når det rødlige skumringslys " +
