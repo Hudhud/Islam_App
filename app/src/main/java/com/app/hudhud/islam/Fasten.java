@@ -1,21 +1,11 @@
 package com.app.hudhud.islam;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
 import android.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.astuetz.PagerSlidingTabStrip;
 
 /**
  * Created by Hadi on 08-05-2017.
@@ -26,9 +16,9 @@ public class Fasten extends Fragment {
     TextView intro;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         final View view = inflater.inflate(R.layout.fragment_profet, container, false);
-        ((Frontpage) getActivity()).setActionBarTitle("Hvem er pålagt til at faste?");
 
         intro = (TextView) view.findViewById(R.id.introtilprofeter);
 

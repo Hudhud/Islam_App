@@ -1,11 +1,8 @@
 package com.app.hudhud.islam;
 
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.text.Html;
 import android.text.SpannableString;
-import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +18,7 @@ private int mPage;
 public static PageFragment_Bontider newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
-        PageFragment_Bontider  fragment = new PageFragment_Bontider ();
+        PageFragment_Bontider fragment = new PageFragment_Bontider();
         fragment.setArguments(args);
         return fragment;
         }
@@ -76,11 +73,11 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sa
         String headline5 = "Den femte bøn er morgenbønnen (As-Subh)";
         int spanStart5 = text[1].indexOf(headline5);
         int spanEnd5 = spanStart5 + headline5.length();
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart, spanEnd, 0);
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart2, spanEnd2, 0);
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart3, spanEnd3, 0);
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart4, spanEnd4, 0);
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart5, spanEnd5, 0);
+//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart, spanEnd, 0);
+//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart2, spanEnd2, 0);
+//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart3, spanEnd3, 0);
+//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart4, spanEnd4, 0);
+//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart5, spanEnd5, 0);
 
         tvTitle.setText(spannableString);
 

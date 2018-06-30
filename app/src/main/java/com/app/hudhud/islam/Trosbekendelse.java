@@ -1,16 +1,15 @@
 package com.app.hudhud.islam;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.astuetz.PagerSlidingTabStrip;
+import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 /**
  * Created by Hadi on 13-11-2016.
@@ -29,13 +28,13 @@ public class Trosbekendelse extends AppCompatActivity {
         viewPager.setAdapter(new SampleFragmentPagerAdapter_Trosbekendelsen(getSupportFragmentManager()));
 
         // Give the PagerSlidingTabStrip the ViewPager
-        PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        SmartTabLayout tabView = findViewById(R.id.main_tab_view);
+        tabView.setViewPager(viewPager);
+        Toolbar toolbar = findViewById(R.id.main_title);
+        toolbar.setTitle("Trosbekendelsen");
 
-        // Attach the view pager to the tab strip
-        tabsStrip.setViewPager(viewPager);
-
-        getSupportActionBar().setTitle("Trosbekendelsen");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8b4513")));
+//        getSupportActionBar().setTitle("Trosbekendelsen");
+//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8b4513")));
     }
 
     @Override

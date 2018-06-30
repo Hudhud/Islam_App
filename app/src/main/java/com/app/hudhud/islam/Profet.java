@@ -16,10 +16,9 @@ public class Profet extends Fragment {
     TextView intro;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         final View view = inflater.inflate(R.layout.fragment_profet, container, false);
-        ((Frontpage) getActivity()).setActionBarTitle("Hvad er en profet?");
-
         intro = (TextView) view.findViewById(R.id.introtilprofeter);
 
         intro.setText("En profet er et menneske, udvalgt af Allah, til at videregive budskabet om islam.\n" +

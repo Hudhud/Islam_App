@@ -4,7 +4,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="#f25329"
+    android:background="@color/colorGrey"
+    android:padding="15dp"
     android:contextClickable="false">
     <ScrollView
         android:layout_width="fill_parent"
@@ -21,7 +22,6 @@
         android:textSize="20dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:textColor="#ffffff"
         android:scrollbars="vertical"/>
 
     <TextView
@@ -41,8 +41,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:textSize="20dp"
-        android:id="@+id/textView2"
-        android:textColor="#ffffff"/>
+        android:id="@+id/textView2"/>
         </LinearLayout>
 
     </ScrollView>

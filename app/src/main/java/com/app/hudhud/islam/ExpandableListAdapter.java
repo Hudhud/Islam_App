@@ -3,8 +3,6 @@ package com.app.hudhud.islam;
 /**
  * Created by Hadi on 18-09-2016.
  */
-import java.util.HashMap;
-import java.util.List;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -15,6 +13,9 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
 
+import java.util.HashMap;
+import java.util.List;
+
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context _context;
@@ -22,7 +23,6 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     // child data in format of header title, child title
     private HashMap<String, List<String>> _listDataChild;
     private ExpandableListView exp;
-
 
     public ExpandableListAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List<String>> listChildData, ExpandableListView exp) {
@@ -98,6 +98,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
         TextView lblListHeader = (TextView) convertView
                 .findViewById(R.id.lblListHeader);
+
         lblListHeader.setTypeface(null, Typeface.BOLD);
         lblListHeader.setText(headerTitle);
 
@@ -112,7 +113,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public boolean isChildSelectable(int groupPosition, int childPosition) {
+    public boolean isChildSelectable(int groupPosition, int childPosition)
+    {
         return true;
     }
 }

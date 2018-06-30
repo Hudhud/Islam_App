@@ -16,10 +16,9 @@ public class Fasten_Dage extends Fragment {
     TextView intro;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         final View view = inflater.inflate(R.layout.fragment_profet, container, false);
-
-        ((Frontpage) getActivity()).setActionBarTitle("Dagene man ikke må faste");
 
         intro = (TextView) view.findViewById(R.id.introtilprofeter);
 

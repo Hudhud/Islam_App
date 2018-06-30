@@ -1,16 +1,15 @@
 package com.app.hudhud.islam;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.astuetz.PagerSlidingTabStrip;
+import com.ogaclejapan.smarttablayout.SmartTabLayout;
 
 /**
  * Created by hudhud on 3/9/16.
@@ -28,13 +27,13 @@ public class Bon_Betingelser extends AppCompatActivity {
         viewPager.setAdapter(new SampleFragmentPagerAdapter_Bon_Betingelser(getSupportFragmentManager()));
 
         // Give the PagerSlidingTabStrip the ViewPager
-        PagerSlidingTabStrip tabsStrip = (PagerSlidingTabStrip) findViewById(R.id.tabs);
+        SmartTabLayout tabView = findViewById(R.id.main_tab_view);
+        tabView.setViewPager(viewPager);
+        Toolbar toolbar = findViewById(R.id.main_title);
+        toolbar.setTitle("Bønnens betingelser");
 
-        // Attach the view pager to the tab strip
-        tabsStrip.setViewPager(viewPager);
-
-        getSupportActionBar().setTitle("Bønnens betingelser");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#A0522D")));
+//        getSupportActionBar().setTitle("Bønnens betingelser");
+//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#A0522D")));
     }
 
     @Override

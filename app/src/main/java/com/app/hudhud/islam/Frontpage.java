@@ -1,22 +1,28 @@
 package com.app.hudhud.islam;
 
 import android.app.Fragment;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import static com.app.hudhud.islam.R.attr.title;
 
 /**
  * Created by hudhud on 2/7/16.
@@ -29,20 +35,24 @@ public class Frontpage extends AppCompatActivity {
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
     protected Intent intent;
-    private ImageView image;
+//    private ImageView image;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.frontpage);
+        final Context ctx= this;
 
-        image = (ImageView) findViewById(R.id.imageView3);
+//        image = (ImageView) findViewById(R.id.imageView3);
 
         switcher = (ViewSwitcher) findViewById(R.id.switcher);
         switcher.setDisplayedChild(1);
 
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
+
+        ViewCompat.setNestedScrollingEnabled(expListView, true);
 
         // preparing list data
         prepareListData();
@@ -52,11 +62,54 @@ public class Frontpage extends AppCompatActivity {
         // setting list adapter
         expListView.setAdapter(listAdapter);
 
-        expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
-
+        findViewById(R.id.contactfab).setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onGroupClick(ExpandableListView parent, View v,
-                                        int groupPosition, long id) {
+            public void onClick(View view){
+                final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Frontpage.this);
+
+                LayoutInflater inflater = Frontpage.this.getLayoutInflater();
+                View dialogView = inflater.inflate(R.layout.dialog_contact, null);
+                dialogBuilder.setView(dialogView);
+                final EditText editText = (EditText) dialogView.findViewById(R.id.contactText);
+                editText.setText("");
+                final AlertDialog dialog = dialogBuilder.create();
+                dialogView.findViewById(R.id.send_button).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String [] reciever = new String[]{"appfeedback@hotmail.com"};
+                        String subject = ("Feedback/spørgsmål");
+                        Intent mailIntent = new Intent(Intent.ACTION_SEND);
+                        mailIntent.putExtra(Intent.EXTRA_EMAIL, reciever);
+                        mailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                        mailIntent.putExtra(Intent.EXTRA_TEXT, editText.getText().toString());
+                        mailIntent.setType("message/rfc822");
+                        startActivity(Intent.createChooser(mailIntent, "Vælg en applikation til at sende din mail med"));
+                    }
+                });
+
+                dialogView.findViewById(R.id.cancel_button).setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View view) {
+                        dialog.cancel();
+                    }
+                });
+
+                dialog.show();
+            }
+        });
+
+        expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener()
+        {
+            @Override
+            public boolean onGroupClick(ExpandableListView parent, View clickedView, int i, long l)
+            {
+                TextView lblListHeader = (TextView) clickedView.findViewById(R.id.lblListHeader);
+
+                if (!parent.isGroupExpanded(i))
+                    lblListHeader.setCompoundDrawablesWithIntrinsicBounds( R.drawable.show_up, 0, 0, 0);
+                else
+                    lblListHeader.setCompoundDrawablesWithIntrinsicBounds( R.drawable.show_down, 0, 0, 0);
 
                 return false;
             }
@@ -101,15 +154,18 @@ public class Frontpage extends AppCompatActivity {
                 if (groupPosition == 1) {
                     switch (childPosition) {
                         case 0:
-                            Fragment fragment = new Profet();
-                            getFragmentManager().beginTransaction()
-                                    .add(R.id.kontaktfrag, fragment)
-                                    .addToBackStack(null)
-                                    .commit();
-                            switcher.setDisplayedChild(0);
-                            image.setVisibility(View.GONE);
+                            ShowMsg("En profet er et menneske, udvalgt af Allah, til at videregive budskabet om islam.\n" +
+                                    "I alt har der eksisteret ca. 124.000 profeter. Iblandt det, profeterne har tilfælles, er, at de alle kom med religionen islam." +
+                                    " Nogle af profeterne var sendebud, hvilket er en profet, som har fået åbenbaret en ny lovgivning.\n" +
+                                    "Profeten Adam var det første sendebud og den første profet, mens profeten Muhammad var det sidste sendebud og den sidste profet.");
+//                            Fragment fragment = new Profet();
+//                            getFragmentManager().beginTransaction()
+//                                    .add(R.id.kontaktfrag, fragment)
+//                                    .addToBackStack(null)
+//                                    .commit();
+//                            switcher.setDisplayedChild(0);
+//                            image.setVisibility(View.GONE);
                             break;
-
                         case 1:
                             intent = new Intent(getApplicationContext(), Egenskaber_Profeter.class);
                             startActivity(intent);
@@ -174,26 +230,35 @@ public class Frontpage extends AppCompatActivity {
                 if (groupPosition == 5){
                     switch (childPosition){
                         case 0:
-                            Fragment fragment = new Fasten();
-                            getFragmentManager().beginTransaction()
-                                    .add(R.id.kontaktfrag, fragment)
-                                    .addToBackStack(null)
-                                    .commit();
-                            switcher.setDisplayedChild(0);
-                            image.setVisibility(View.GONE);
+                            ShowMsg("Enhver ansvarlig muslim er pålagt at faste Ramadan-måneden, dog er fasten ugyldig fra kvinden under efterfødsels - eller menstruationsperiode; de skal dog begge indhente de mistede dage. \n" +
+                                    "\nAt bryde fasten er tilladt for den syge person, der ikke kan udholde fasten, den gravide eller ammende kvinde, der frygter skade for sig selv eller barnet samt den, der er på en lang rejse (ca. 50km) selvom vedkommende ikke møder strabadser under sin rejse." +
+                                    " Det er dem dog forpligtet at indhente de mistede dage.");
+//                            Fragment fragment = new Fasten();
+//                            getFragmentManager().beginTransaction()
+//                                    .add(R.id.kontaktfrag, fragment)
+//                                    .addToBackStack(null)
+//                                    .commit();
+//                            switcher.setDisplayedChild(0);
+//                            image.setVisibility(View.GONE);
                             break;
                         case 1:
                             intent = new Intent(getApplicationContext(), Fasten_Sojler.class);
                             startActivity(intent);
                             break;
                         case 2:
-                            Fragment fragment1 = new Fasten_Dage();
-                            getFragmentManager().beginTransaction()
-                                    .add(R.id.kontaktfrag, fragment1)
-                                    .addToBackStack(null)
-                                    .commit();
-                            switcher.setDisplayedChild(0);
-                            image.setVisibility(View.GONE);
+                            ShowMsg("Det er ugyldigt at faste de to højtider - ^Id al-Fitr og ^Id al-Adha, og de tre dage efter ^Id al-Adha (Tashriq-dagene). " +
+                                    "\n\nDet er også ugyldigt at faste den sidste halvdel af Sha^ban-måneden samt dagen, hvor én som ikke er troværdig (^adl) har set månen, " +
+                                    "medmindre man stoler på denne person." +
+                                    "\n\nDet er dog gyldigt at faste den sidste halvdel af Sha^ban-måneden, hvis man forbinder fasten af disse dage med dagene før dem, eller ved indhentning af fasten (qada´), " +
+                                    "opfyldelse af løfter (nadhr), eller vanemæssig belønningsværdig praksis (wird), " +
+                                    "såsom den person, der har til vane at faste hver mandag og torsdag.");
+//                            Fragment fragment1 = new Fasten_Dage();
+//                            getFragmentManager().beginTransaction()
+//                                    .add(R.id.kontaktfrag, fragment1)
+//                                    .addToBackStack(null)
+//                                    .commit();
+//                            switcher.setDisplayedChild(0);
+//                            image.setVisibility(View.GONE);
 
                         default:
                             break;
@@ -210,13 +275,13 @@ public class Frontpage extends AppCompatActivity {
         if (getFragmentManager().getBackStackEntryCount() == 0) {
             this.finish();
             switcher.setDisplayedChild(1);
-            getSupportActionBar().setTitle("Islams Fundament");
-            image.setVisibility(View.VISIBLE);
+//            getSupportActionBar().setTitle("Islams Fundament");
+//            image.setVisibility(View.VISIBLE);
         } else {
             getFragmentManager().popBackStack();
             switcher.setDisplayedChild(1);
-            getSupportActionBar().setTitle("Islams Fundament");
-            image.setVisibility(View.VISIBLE);
+//            getSupportActionBar().setTitle("Islams Fundament");
+//            image.setVisibility(View.VISIBLE);
         }
     }
 
@@ -227,10 +292,10 @@ public class Frontpage extends AppCompatActivity {
     }
 
     public void setActionBarTitle(String title){
-        getSupportActionBar().setTitle(title);
+//        getSupportActionBar().setTitle(title);
     }
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId() == R.id.Kontakt) {
@@ -240,14 +305,14 @@ public class Frontpage extends AppCompatActivity {
                     .addToBackStack(null)
                     .commit();
             switcher.setDisplayedChild(0);
-            image.setVisibility(View.GONE);
-        } /*else if (item.getItemId() == R.id.følgfb) {
+//            image.setVisibility(View.GONE);
+        } else if (item.getItemId() == R.id.følgfb) {
             launhFBgroup();
         } else if (item.getItemId() == R.id.følgyt) {
             launhyt();
-        }*/
+        }
         return super.onOptionsItemSelected(item);
-    }
+    } */
 
    /* private void launhFBgroup() {
         String FBURL = "https://www.facebook.com/groups/539057376281241/";
@@ -306,6 +371,30 @@ public class Frontpage extends AppCompatActivity {
         listDataChild.put(listDataHeader.get(4), boennen);
         listDataChild.put(listDataHeader.get(5), fasten);
 
+    }
+
+    void ShowMsg(String msg)
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        ScrollView scroll = new ScrollView(this);
+        scroll.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT));
+        TextView txt = new TextView(this);
+        scroll.addView(txt);
+        txt.setHint(msg);
+        txt.setTextSize(22);
+        txt.setPadding(100, 100, 100, 100);
+        builder.setView(txt);
+        builder.setView(scroll);
+
+        builder.setNegativeButton("Done", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
     }
 }
 
