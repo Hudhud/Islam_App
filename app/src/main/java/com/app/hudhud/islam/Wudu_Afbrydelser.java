@@ -28,6 +28,7 @@ public class Wudu_Afbrydelser extends AppCompatActivity {
 
         // Give the PagerSlidingTabStrip the ViewPager
         SmartTabLayout tabView = findViewById(R.id.main_tab_view);
+        tabView.setDistributeEvenly(true);
         tabView.setViewPager(viewPager);
         Toolbar toolbar = findViewById(R.id.main_title);
         toolbar.setTitle("Wudu's afbrydelser");

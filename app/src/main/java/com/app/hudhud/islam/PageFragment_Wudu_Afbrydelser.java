@@ -36,7 +36,7 @@ public class PageFragment_Wudu_Afbrydelser extends Fragment {
         View view = inflater.inflate(R.layout.fragment_wudu_afbrydelser, container, false);
         TextView tvTitle = (TextView) view.findViewById(R.id.afbrydelse);
 
-        String[] text = new String[5];
+        String[] text = new String[4];
         text[0] = "Alt, der kommer ud af endetarmen eller kønsdelen, undtagen udløsning.";
         text[1] = "Berøring af penis, skedeåbning eller ringmuskelen på et menneske med håndfladen uden afskærmning.";
         text[2] = "Berøring af huden af en kvinde, man kan gifte sig med, og som har nået en alder, hvor hun er fysisk tiltrækkende; (Hvis man rører håret af en fremmed kvinde, afbrydes wudu' ikke, men det er haram).\n\n" +
