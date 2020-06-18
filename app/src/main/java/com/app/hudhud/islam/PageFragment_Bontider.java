@@ -86,9 +86,9 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sa
         billede[0] = R.drawable.bontider;
 
         if(billede[mPage] != 0){
-            bontider.setVisibility(View.VISIBLE);
-            bontider.setImageResource(billede[mPage]);
-            tvTitle.setVisibility(View.GONE);
+          //  bontider.setVisibility(View.VISIBLE);
+           // bontider.setImageResource(billede[mPage]);
+            //tvTitle.setVisibility(View.GONE);
         }
 
         return view;

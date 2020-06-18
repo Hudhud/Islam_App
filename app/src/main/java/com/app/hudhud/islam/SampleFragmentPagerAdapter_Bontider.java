@@ -5,8 +5,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class SampleFragmentPagerAdapter_Bontider extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] {"Bøntidstabel","Hvordan indtræder bønnerne?"};
+    final int PAGE_COUNT = 1;
+    private String tabTitles[] = new String[] {"Hvordan indtræder bønnerne?"};
 
     public SampleFragmentPagerAdapter_Bontider(FragmentManager fm) {
         super(fm);
