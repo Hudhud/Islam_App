@@ -2,7 +2,7 @@ package com.app.hudhud.islam;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,9 +36,9 @@ public class PageFragment_Trosbekendelse extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.text);
-        TextView tvTitle2 = (TextView) view.findViewById(R.id.textView);
-        TextView tvTitle3 = (TextView) view.findViewById(R.id.textView2);
+        TextView tvTitle = view.findViewById(R.id.text);
+        TextView tvTitle2 = view.findViewById(R.id.textView);
+        TextView tvTitle3 = view.findViewById(R.id.textView2);
 
         String [] text = new String [2];
         text[0] = "Førend man kan blive muslim, skal man have den rette tro på Allah og Hans profeter samt at fremsige trosbekendelsen, " +

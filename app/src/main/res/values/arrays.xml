@@ -1,85 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2011 Iranian Supreme Council of ICT, The FarsiTel Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASICS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<!-- Never ever ever change this array sequentiality, or you get unpredictable results  -->
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string-array name="state_names">
-
-		<item>Arak</item>
-		<item>Ardabil</item>
-		<item>Orumiyeh</item>
-		<item>Esfehan</item>
-		<item>Ahvaz</item>
-		<item>Ilam</item>
-		<item>Bojnurd</item>
-		<item>Bandar Abbas</item>
-		<item>Bushehr</item>
-		<item>Birjand</item>
-		<item>Tabriz</item>
-		<item>Tehran</item>
-		<item>Khoram Abad</item>
-		<item>Rasht</item>
-		<item>Zahedan</item>
-		<item>Zanjan</item>
-		<item>Sari</item>
-		<item>Semnan</item>
-		<item>Sanandaj</item>
-		<item>Shahr-e-kord</item>
-		<item>Shiraz</item>
-		<item>Ghazvin</item>
-		<item>Qom</item>
-		<item>Karaj</item>
-		<item>Kerman</item>
-		<item>Kermanshah</item>
-		<item>Gorgan</item>
-		<item>Mashhad</item>
-		<item>Hamedan</item>
-		<item>Yasuj</item>
-		<item>Yazd</item>
+	<!-- List Headers -->
+	<string-array name="listDataHeader">
+		<item>Allah</item>
+		<item>Profeterne</item>
+		<item>Konvertering til islam</item>
+		<item>Wudu</item>
+		<item>Bønnen</item>
+		<item>Fasten</item>
 	</string-array>
-	<string-array translatable="false" name="state_keys">
-		<item>1</item>
-		<item>2</item>
-		<item>3</item>
-		<item>4</item>
-		<item>5</item>
-		<item>6</item>
-		<item>7</item>
-		<item>8</item>
-		<item>9</item>
-		<item>10</item>
-		<item>11</item>
-		<item>12</item>
-		<item>13</item>
-		<item>14</item>
-		<item>15</item>
-		<item>16</item>
-		<item>17</item>
-		<item>18</item>
-		<item>19</item>
-		<item>20</item>
-		<item>21</item>
-		<item>22</item>
-		<item>23</item>
-		<item>24</item>
-		<item>25</item>
-		<item>26</item>
-		<item>27</item>
-		<item>28</item>
-		<item>29</item>
-		<item>30</item>
-		<item>31</item>
+
+	<!-- Sub-list for Allah -->
+	<string-array name="allah_sub">
+		<item>De 13 egenskaber</item>
+	</string-array>
+
+	<!-- Sub-list for Profeterne -->
+	<string-array name="profeterne_sub">
+		<item>Hvad er en profet?</item>
+		<item>Profeternes egenskaber</item>
+	</string-array>
+
+	<!-- Sub-list for Konvertering til islam -->
+	<string-array name="konvertering_sub">
+		<item>Trosbekendelsen</item>
+	</string-array>
+
+	<!-- Sub-list for Wudu' -->
+	<string-array name="wudu_sub">
+		<item>Hvordan man udfører wudu</item>
+		<item>Betingelser</item>
+		<item>Afbrydelser</item>
+	</string-array>
+
+	<!-- Sub-list for Bønnen -->
+	<string-array name="boennen_sub">
+		<item>Søjler</item>
+		<item>Betingelser</item>
+		<item>Afbrydelser</item>
+		<item>Bøntider</item>
+	</string-array>
+
+	<!-- Sub-list for Fasten -->
+	<string-array name="fasten_sub">
+		<item>Hvem er pålagt til at faste?</item>
+		<item>Fastens søjler</item>
+		<item>Dagene man ikke må faste</item>
 	</string-array>
 </resources>

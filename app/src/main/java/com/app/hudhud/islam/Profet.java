@@ -1,5 +1,6 @@
 package com.app.hudhud.islam;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,11 +16,12 @@ public class Profet extends Fragment {
 
     TextView intro;
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         final View view = inflater.inflate(R.layout.fragment_profet, container, false);
-        intro = (TextView) view.findViewById(R.id.introtilprofeter);
+        intro = view.findViewById(R.id.introtilprofeter);
 
         intro.setText("En profet er et menneske, udvalgt af Allah, til at videregive budskabet om islam.\n" +
                 "I alt har der eksisteret ca. 124.000 profeter. Iblandt det, profeterne har tilfælles, er, at de alle kom med religionen islam." +

@@ -1,7 +1,7 @@
 package com.app.hudhud.islam;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +34,7 @@ public class PageFragment_Wudu_Afbrydelser extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wudu_afbrydelser, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.afbrydelse);
+        TextView tvTitle = view.findViewById(R.id.afbrydelse);
 
         String[] text = new String[4];
         text[0] = "Alt, der kommer ud af endetarmen eller kønsdelen, undtagen udløsning.";

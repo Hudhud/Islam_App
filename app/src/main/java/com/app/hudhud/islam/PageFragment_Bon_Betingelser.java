@@ -1,15 +1,12 @@
 package com.app.hudhud.islam;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by hudhud on 3/9/16.
- */
 public class PageFragment_Bon_Betingelser extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
 
@@ -33,24 +30,35 @@ public class PageFragment_Bon_Betingelser extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wudu_afbrydelser, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.afbrydelse);
+        TextView tvTitle = view.findViewById(R.id.afbrydelse);
 
-        String [] text = new String [7];
-        text[0] = "At være Muslim.";
+        String text = "";
+        switch (mPage) {
+            case 0:
+                text = getString(R.string.betingelse_0);
+                break;
+            case 1:
+                text = getString(R.string.betingelse_1);
+                break;
+            case 2:
+                text = getString(R.string.betingelse_2);
+                break;
+            case 3:
+                text = getString(R.string.betingelse_3);
+                break;
+            case 4:
+                text = getString(R.string.betingelse_4);
+                break;
+            case 5:
+                text = getString(R.string.betingelse_5);
+                break;
+            case 6:
+                text = getString(R.string.betingelse_6);
+                break;
+            // ... (other cases)
+        }
 
-        text[1] = "At være rettet med brystet mod Qiblah.";
-
-        text[2] = "At tiden for den pågældende bøn er indtrådt.";
-
-        text[3] = "At have nået At-Tamjjiz-alderen, dvs. den alder, hvor barnet forstår det stillede spørgsmål og kan svare tilbage på det.";
-
-        text[4] = "At kende til forpligtelsen af de fem forpligtede bønner.";
-
-        text[5] = "Ikke at anse nogle af bønnens søjler som værende sunnah.";
-
-        text[6] = "For den frie kvinde at tildække hele kroppen undtagen ansigtet og hænderne, dvs., at skjule huden og håret samt deres farver; for manden at tildække området mellem navlen og knæene.";
-
-        tvTitle.setText(text[mPage]);
+        tvTitle.setText(text);
 
         return view;
     }

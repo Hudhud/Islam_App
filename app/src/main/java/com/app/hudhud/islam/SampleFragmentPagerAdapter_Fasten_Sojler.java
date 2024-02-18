@@ -1,33 +1,26 @@
 package com.app.hudhud.islam;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-/**
- * Created by hudhud on 2/7/16.
- */
-public class SampleFragmentPagerAdapter_Fasten_Sojler extends FragmentPagerAdapter {
+public class SampleFragmentPagerAdapter_Fasten_Sojler extends FragmentStateAdapter {
     final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "Hensigten", "Afbrydelser"};
 
-    public SampleFragmentPagerAdapter_Fasten_Sojler(FragmentManager fm) {
-        super(fm);
+    public SampleFragmentPagerAdapter_Fasten_Sojler(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return PAGE_COUNT;
-    }
-
-    @Override
-    public Fragment getItem(int position) {
+    public Fragment createFragment(int position) {
         return PageFragment_Fasten_Sojler.newInstance(position);
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+    public int getItemCount() {
+        return PAGE_COUNT;
     }
+
 }

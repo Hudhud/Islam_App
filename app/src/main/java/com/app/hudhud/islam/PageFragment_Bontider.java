@@ -1,39 +1,38 @@
 package com.app.hudhud.islam;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.SpannableString;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-public class PageFragment_Bontider extends Fragment{
+import androidx.fragment.app.Fragment;
 
-public static final String ARG_PAGE = "ARG_PAGE";
+public class PageFragment_Bontider extends Fragment {
 
-private int mPage;
+    public static final String ARG_PAGE = "ARG_PAGE";
 
-public static PageFragment_Bontider newInstance(int page) {
+    private int mPage;
+
+    public static PageFragment_Bontider newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
         PageFragment_Bontider fragment = new PageFragment_Bontider();
         fragment.setArguments(args);
         return fragment;
-        }
+    }
 
-@Override
-public void onCreate(Bundle savedInstanceState) {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPage = getArguments().getInt(ARG_PAGE);
-        }
+    }
 
-@Override
-public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_bontider, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.bonner);
-        ImageView bontider = (ImageView) view.findViewById(R.id.imageView);
+        TextView tvTitle = view.findViewById(R.id.bonner);
 
         String[] text = new String[2];
 
@@ -73,24 +72,10 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle sa
         String headline5 = "Den femte bøn er morgenbønnen (As-Subh)";
         int spanStart5 = text[1].indexOf(headline5);
         int spanEnd5 = spanStart5 + headline5.length();
-//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart, spanEnd, 0);
-//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart2, spanEnd2, 0);
-//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart3, spanEnd3, 0);
-//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart4, spanEnd4, 0);
-//        spannableString.setSpan(new StyleSpan(Typeface.BOLD), spanStart5, spanEnd5, 0);
 
         tvTitle.setText(spannableString);
 
-        int[] billede = new int[2];
-
-        billede[0] = R.drawable.bontider;
-
-        if(billede[mPage] != 0){
-          //  bontider.setVisibility(View.VISIBLE);
-           // bontider.setImageResource(billede[mPage]);
-            //tvTitle.setVisibility(View.GONE);
-        }
 
         return view;
-        }
+    }
 }

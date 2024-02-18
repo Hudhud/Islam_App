@@ -1,57 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2011 Iranian Supreme Council of ICT, The FarsiTel Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASICS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 <resources>
-	<string name="app_name">Location Compass</string>
-	
+	<!-- Original content -->
 	<string name="settings_label">Settings</string>
 	<string name="prefs_menu_title">Settings</string>
 	<string name="about_menu_title">About</string>
-
-	<string name="screen_down_text">Please hold your phone horizontally and toward upside so that it\'s compass could work. Can\'t determine the direction of the north accurately now.</string>
-
-	<string name="no_location_yet">Please wait. Detecting your location...\nOr you can select your city in the Settings.</string>
-	<string name="geo_location_info">Location Data Acquired.</string>
-	<string name="latitude_north">N</string>
-	<string name="latitude_south">S</string>
-	<string name="longitude_east">E</string>
-	<string name="longitude_west">W</string>
-
-	<string name="gps_status">Use GPS</string>
-	<string name="gps_status_summary">Enables using GPS for getting your location.</string>
-
-	<string name="gps_prompt">Use GPS</string>
-	<string name="gps_summary">Enables using GPS for getting your location.</string>
-
 	<string name="state_location_title"></string>
 	<string name="state_location_summary"></string>
-
 	<string name="about_title_text"></string>
-
-	<string name="about_text"><br/>
-
-   <br/><br/>
-    Visit <font fgcolor="#ff749c00"><a href="http://farsitel.com/fa/" fgcolor="749C00FF">http://farsitel.com/</a></font> to learn more about 
-   <font fgcolor="#ffffffff"><b>FarsiTel</b></font>.
-   <br/><br/>
-   </string>
-
-	<!-- Do not translate next two tag, it's used by program for other reasons -->
-	<string name="gps_pref_key">GPS_LOCATION_PREF</string>
-	<string name="state_location_pref_key">state_LOCATION_PREF</string>
-
+	<string name="about_text"><br/><br/>Visit <font fgcolor="#ff749c00"><a href="http://farsitel.com/fa/" fgcolor="749C00FF">http://farsitel.com/</a></font> to learn more about <font fgcolor="#ffffffff"><b>FarsiTel</b></font>.<br/><br/></string>
 	<string name="release_date">March 30, 2011\n</string>
 	<string name="version">Version 1.22</string>
+
+	<!-- New entries -->
+	<string name="allah">Allah</string>
+	<string name="profeterne">Profeterne</string>
+	<string name="konvertering">Konvertering til islam</string>
+	<string name="wudu">Wudu</string>
+	<string name="boennen">Bønnen</string>
+	<string name="fasten">Fasten</string>
+	<string name="profet_description">En profet er et menneske, udvalgt af Allah, til at videregive budskabet om islam. I alt har der eksisteret ca. 124.000 profeter. Iblandt det, profeterne har tilfælles, er, at de alle kom med religionen islam. Nogle af profeterne var sendebud, hvilket er en profet, som har fået åbenbaret en ny lovgivning. Profeten Adam var det første sendebud og den første profet, mens profeten Muhammad var det sidste sendebud og den sidste profet.</string>
+	<string name="fasten_description">Enhver ansvarlig muslim er pålagt at faste Ramadan-måneden, dog er fasten ugyldig fra kvinden under efterfødsels - eller menstruationsperiode; de skal dog begge indhente de mistede dage. At bryde fasten er tilladt for den syge person, der ikke kan udholde fasten, den gravide eller ammende kvinde, der frygter skade for sig selv eller barnet samt den, der er på en lang rejse (ca. 50km) selvom vedkommende ikke møder strabadser under sin rejse. Det er dem dog forpligtet at indhente de mistede dage.</string>
+	<string name="fasten_days_description">Det er ugyldigt at faste de to højtider - ^Id al-Fitr og ^Id al-Adha, og de tre dage efter ^Id al-Adha (Tashriq-dagene). Det er også ugyldigt at faste den sidste halvdel af Sha^ban-måneden samt dagen, hvor én som ikke er troværdig (^adl) har set månen, medmindre man stoler på denne person. Det er dog gyldigt at faste den sidste halvdel af Sha^ban-måneden, hvis man forbinder fasten af disse dage med dagene før dem, eller ved indhentning af fasten (qada´), opfyldelse af løfter (nadhr), eller vanemæssig belønningsværdig praksis (wird), såsom den person, der har til vane at faste hver mandag og torsdag.</string>
+	<string name="fasten_dage_intro_text">Det er ugyldigt at faste de to højtider - ^Id al-Fitr og ^Id al-Adha, og de tre dage efter ^Id al-Adha (Tashriq-dagene). \n\nDet er også ugyldigt at faste den sidste halvdel af Sha^ban-måneden samt dagen, hvor én som ikke er troværdig (^adl) har set månen, medmindre man stoler på denne person. \n\nDet er dog gyldigt at faste den sidste halvdel af Sha^ban-måneden, hvis man forbinder fasten af disse dage med dagene før dem, eller ved indhentning af fasten (qada´), opfyldelse af løfter (nadhr), eller vanemæssig belønningsværdig praksis (wird), såsom den person, der har til vane at faste hver mandag og torsdag.</string>
+	<string name="fasten_intro_text">Enhver ansvarlig muslim er pålagt at faste Ramadan-måneden, dog er fasten ugyldig fra kvinden under efterfødsels - eller menstruationsperiode; de skal dog begge indhente de mistede dage. \n\nAt bryde fasten er tilladt for den syge person, der ikke kan udholde fasten, den gravide eller ammende kvinde, der frygter skade for sig selv eller barnet samt den, der er på en lang rejse (ca. 50km) selvom vedkommende ikke møder strabadser under sin rejse. Det er dem dog forpligtet at indhente de mistede dage.</string>
+	<string name="fastens_sojler_title">Fastens søjler</string>
+
+	<string-array name="egenskaber">
+		<item>"Før Allah skabte himlen, tronen, stedet, tiden og alle andre skabninger, eksisterede Han uden dem, og Han eksisterer nu som han altid har gjort, da Han ikke forandrer Sig. Ergo eksisterer Allah uden tid og sted, da de er skabt af Ham. \n\nProfeten, må Allah ophøje hans rang, sagde:"</item>
+		<item>"Allah er Én og har ingen partner i Sin guddommelighed. Han er Én i Sit selv, Én i Sine egenskaber og Én i Sine handlinger.\n\nAllah, være ophøjet, sagde i Surat Muhammad, vers 19: "</item>
+		<item>"Allah har ingen begyndelse på Sin eksistens og intet andet end Ham er evigt. Han eksisterede før Han skabte alle skabningerne som f.eks. tid og sted.\n\nProfeten, må Allah ophøje hans rang, sagde: "</item>
+		<item>"Allah er uophørlig dvs. Han ingen slutning har på Sin eksistens. Han forgår ikke, ej heller udslettes Han.\n\nAllah, være ophøjet, sagde i Surat Al-Hadid, vers 3:"</item>
+		<item>"Allah har ikke brug for nogen eller noget, mens alle skabninger har brug for Ham.\n\nAllah, være ophøjet, sagde i Surat Al-Ikhlas, vers 2:"</item>
+		<item>"Allah magter alt, dvs. Han formår alt, hvad Han vil.\n\nAllah, være ophøjet, sagde i Surat Al-Mulk, vers 1:"</item>
+		<item>"Alt i universet sker med Allahs vilje. Intet sker mod Hans vilje.\n"
+                "\nAbou  Dawoud  har  berettet  i  sin  ”Sunan”,  at  profeten, må  Allah  ophøje  hans  rang, lærte nogle af sine døtre at sige:"</item>
+		<item>"Allah er vidende om alt før det sker. Intet er skjult for Ham.\n\nAllah, være ophøjet, sagde i Surat Al-Anfal, vers 75:"</item>
+		<item>"Allah hører alt uden ører eller andre redskaber.\n\nِAllah, være ophøjet, sagde i Surat Ash-Shura, vers 11:"</item>
+		<item>"Allah ser alt uden øjne eller andre redskaber.\n\nAllah, være ophøjet, sagde i Surat Ash-Shura, vers 11:"</item>
+		<item>"Allah er beskrevet med et evigt liv, der ikke er med sjæl, kød, blod eller andet.\n\n"Allah, være ophøjet, sagde i Surat Al-Baqarah, vers 255:"</item>
+		<item>"Allahs tale er ikke med lyd, bogstaver eller sprog, og den ligner ikke vores tale. Det, der står i koranen på arabisk, er et udtryk for Allahs evige tale."+
+        "\n\nAllah, være ophøjet, sagde i Surat An-Nisaa', vers 164"</item>
+		<item>"Allah ligner ikke nogen eller noget. Hvad end man forestiller sig i sin fantasi og illusion, er Allah ikke lig det.\n\nAllah, være ophøjet, sagde Surat Ash-Shura vers 11:"</item>
+	</string-array>
+
+	<string-array name="arabiskTekst">
+		<item>"\"كَانَ اللهُ وَلَمْ يَكُنْ شَيْءٌ غَيْرُهُ\""</item>
+		<item>"\"فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللهُ\""</item>
+		<item>"\"كَانَ اللهُ وَلَمْ يَكُنْ شَيْءٌ غَيْرُهُ\""</item>
+		<item>"\"هُوَ الأَوَّلُ وَالآخِرُ\""</item>
+		<item>"\"اللهُ الصَّمَدُ\""</item>
+		<item> "“وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ”"</item>
+		<item>"\"مَا شَاءَ اللَّهُ كَانَ وَمَا لَمْ يَشَأْ لَمْ يَكُنْ\""</item>
+		<item>"\"إِنََّ اللهَ بِكُلِّ شَيْءٍ عَلِيمٌ\""</item>
+		<item>"\"وَهُوَ السَّمِيعُ الْبَصِيرُ\""</item>
+		<item> "\"وَهُوَ السَّمِيعُ الْبَصِيرُ\""</item>
+		<item>"\"اللهُ لاَ إِلَٰهَ إِلاَّ هُوَ الْحَيُّ\""</item>
+		<item> "\"وَكَلَّمَ اللهُ مُوسَى تَكْلِيمًا\""</item>
+		<item>"\"لَيْسَ كَمِثْلِهِ شَيْءٌ\""</item>
+	</string-array>
+
+	<string-array name="arabiskOversaettelse">
+		<item>"hvilket betyder: \n\"Allah eksisterede i al evighed og der var intet andet end Ham\", berettet af Al-Bukhariy."</item>
+		<item>"hvilket betyder: \n\"Vid (Oh Muhammad), at Han (Allah) er den eneste Gud\".</item>
+		<item>"hvilket betyder: \n\"Allah eksisterede i al evighed og der var intet andet end Ham\", berettet af Al-Bukhariy."</item>
+		<item>"hvilket betyder: \n\"Han er Al-Awwal (Den evige) og Al-Akhir (Den uophørlige)\".</item>
+		<item>"hvilket betyder: \n\"Allah har ikke brug for nogen eller noget, mens alt har brug for Ham\".</item>
+		<item>"hvilket betyder: \n\"Og Han magter alting\".</item>
+		<item>"hvilket betyder: \n\"Det, som Allah vil have skal ske, vil ske, og det, som Han ikke vil have skal ske, vil ikke ske\".</item>
+		<item>"hvilket betyder: \n\"Sandelig er Allah velvidende om alt\".</item>
+		<item>"hvilket betyder: \n\"Og Han er Den althørende og Den altseende\".</item>
+		<item>"hvilket betyder: \n\"Og Han er Den althørende og Den altseende\".</item>
+		<item> "hvilket betyder: \n\"Allah, der er ingen anden Gud end Ham. Han er Al-Hayy (Den, der er beskrevet med et evigt liv)\".</item>
+		<item>"hvilket betyder: \n\"Og Allah talte (med Sin evige tale) til Musa\".</item>
+		<item>"hvilket betyder: \n\"Der er absolut intet lig Ham (Allah)\".</item>
+	</string-array>
+
+	<string name="bon_intro">Bønnen har en række søjler og et antal sunan. Uden alle søjlerne er bønnen ugyldig, hvorimod man kan undlade sunan uden at bønnen gøres ugyldig, omend man mister belønning for disse sunan\n\nI det følgende gennemgås søjlerne.</string>
+	<string name="bon_hensigt">At have en hensigt i hjertet om at udføre bønnen. Man skal specificere bønnen, når den har en speciel anledning eller tid, samt at have en hensigt om at udføre forpligtelsen i de pligtige bønner.</string>
+	<string name="bon_takbirah">At sige ”Allahu Akbar” (den indledende takbirah) mindst så højt, at man kan høre sig selv, som det er påkrævet i enhver mundtlig søjle.</string>
+	<string name="bon_qiyam">At stå op (qiyam) i de forpligtede bønner, hvis man magter det.</string>
+	<string name="bon_fatihah">At læse Al-Fatihah</string>
+	<string name="bon_ruku">At bukke sig således at håndfladerne kan nå knæene (ruku^).</string>
+	<string name="bon_tumaninah_ruku">At være stille (tuma´ninah) i bukningen så længe som det tager at sige ”Subhanallah”. Dvs. at alle kroppens knogler skal falde til ro på en gang.</string>
+	<string name="bon_itidal">At rette sig op (I^tidal) til opretstående stilling efter bukningen.</string>
+	<string name="bon_tumaninah_itidal">At være stille (tuma´ninah) i denne opretstående stilling.</string>
+	<string name="bon_sujud">At knæle (udføre sudjud) to gange ved at sætte hele eller en del af sin utildækkede pande på bedestedet med et let tryk og med sin bagdel højere end sin øvre del af kroppen, samt at sætte dele af sine knæ, håndflader og tæerspidserne på bedestedet.</string>
+	<string name="bon_tumaninah_sujud">At være stille (tuma´ninah) i knælningen.</string>
+	<string name="bon_sit_between_sujud">At sidde mellem de to knælninger.</string>
+	<string name="bon_tumaninah_sit">At være stille (tuma´ninah) mens man sidder.</string>
+	<string name="bon_last_tashahhud">At sidde for at sige den sidste tashahhud, As-salatu ^alan-Nabiy, og den afsluttende salam.</string>
+	<string name="bon_tashahud_saying">At sige den sidste tashahhud:\n\nAt-tahiyyatul-mubarakatus-salawatut-tayyibatu lillah,\nAs-salamu ^alayka ayyuhan-nabiyyu wa rahmatullahi wa barakatuh,\nas-salamu ^alayna wa ^ala ^ibadil-lahis-salihin\nAsh hadu alla ilaha illal-lah wa ash hadu anna Muhammadar-rasuulullah\"</string>
+	<string name="bon_salat">At sige As-Salatu ^alan-nabiyy, må Allah ophøje hans rang.</string>
+	<string name="bon_salam">At sige den afsluttende salam</string>
+	<string name="bon_order">At overholde rækkefølgen for søjlerne. Bevidst udeladelse af denne gennemgåede rækkefølge ugyldiggør bønnen.</string>
+
+	<string name="arabic_fatihah">"بِسْمِ اللَّـهِ الرَّ\u200Cحْمَـٰنِ الرَّ\u200Cحِيمِ ﴿١﴾ الْحَمْدُ لِلَّـهِ رَ\u200Cبِّ الْعَالَمِينَ ﴿٢﴾ الرَّ\u200Cحْمَـٰنِ الرَّ\u200Cحِيمِ ﴿٣﴾ مَالِكِ يَوْمِ الدِّينِ ﴿٤﴾ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ﴿٥﴾ اهْدِنَا الصِّرَ\u200Cاطَ الْمُسْتَقِيمَ ﴿٦﴾ صِرَ\u200Cاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ\u200C الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ﴿٧﴾"</string>
+	<string name="arabic_tashahhud">"التَّحِيَّاتُ الْمُبَارَكَاتُ الصَّلَوَاتُ الطَّيِّبَاتُ لِلَّهِ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ"</string>
+	<string name="arabic_salat">"اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ"</string>
+	<string name="arabic_salam">"السَّلاَمُ عَلَيْكُمْ"</string>
+
+	<string name="afbrydelse_0">At udtale to bogstaver eller blot et betydningsbærende bogstav, medmindre det bliver sagt i forglemmelse og at det er lidt.</string>
+	<string name="afbrydelse_1">At udføre mange bevægelser, hvilke ifølge nogle lærde er det, der rummer en rak^ah’s tid.</string>
+	<string name="afbrydelse_2">At udføre en voldsom bevægelse såsom at springe.</string>
+	<string name="afbrydelse_3">At tilføje en ekstra bevægelsessøjle.</string>
+	<string name="afbrydelse_4">At udføre én bevægelse med hensigt at lege såsom at række tunge ad nogen.</string>
+	<string name="afbrydelse_5">At spise eller at drikke, undtagen hvis man glemmer, at man er i bøn, og at det er lidt.</string>
+	<string name="afbrydelse_6">At have til hensigt at afbryde bønnen.</string>
+	<string name="afbrydelse_7">At lade hensigten om at afbryde bønnen afhænge af forekomsten af en hændelse.</string>
+	<string name="afbrydelse_8">At tøve med at afbryde bønnen.</string>
+	<string name="afbrydelse_9">At fuldføre en søjle alt imens man er i tvivl om, man har udført hensigten til at udføre bønnen eller ej under den indledende takbirah; \"Allahu akbar\", eller når tvivlen herom varer længe.</string>
+
+	<string name="betingelse_0">At være Muslim.</string>
+	<string name="betingelse_1">At være rettet med brystet mod Qiblah.</string>
+	<string name="betingelse_2">At tiden for den pågældende bøn er indtrådt.</string>
+	<string name="betingelse_3">At have nået At-Tamjjiz-alderen, dvs. den alder, hvor barnet forstår det stillede spørgsmål og kan svare tilbage på det.</string>
+	<string name="betingelse_4">At kende til forpligtelsen af de fem forpligtede bønner.</string>
+	<string name="betingelse_5">Ikke at anse nogle af bønnens søjler som værende sunnah.</string>
+	<string name="betingelse_6">For den frie kvinde at tildække hele kroppen undtagen ansigtet og hænderne, dvs., at skjule huden og håret samt deres farver; for manden at tildække området mellem navlen og knæene.</string>
 </resources>

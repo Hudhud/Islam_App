@@ -1,33 +1,25 @@
 package com.app.hudhud.islam;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-/**
- * Created by hudhud on 3/9/16.
- */
-public class SampleFragmentPagerAdapter_Wudu_Afbrydelser extends FragmentPagerAdapter {
+public class SampleFragmentPagerAdapter_Wudu_Afbrydelser extends FragmentStateAdapter {
     final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[] { "1", "2", "3", "4" };
 
-    public SampleFragmentPagerAdapter_Wudu_Afbrydelser(FragmentManager fm) {
-        super(fm);
+    public SampleFragmentPagerAdapter_Wudu_Afbrydelser(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return PAGE_COUNT;
-    }
-
-    @Override
-    public Fragment getItem(int position) {
+    public Fragment createFragment(int position) {
         return PageFragment_Wudu_Afbrydelser.newInstance(position);
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+    public int getItemCount() {
+        return PAGE_COUNT;
     }
 }

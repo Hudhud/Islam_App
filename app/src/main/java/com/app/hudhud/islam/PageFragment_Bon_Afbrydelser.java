@@ -1,15 +1,12 @@
 package com.app.hudhud.islam;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by hudhud on 3/9/16.
- */
 public class PageFragment_Bon_Afbrydelser extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
 
@@ -33,30 +30,43 @@ public class PageFragment_Bon_Afbrydelser extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_wudu_afbrydelser, container, false);
-        TextView tvTitle = (TextView) view.findViewById(R.id.afbrydelse);
+        TextView tvTitle = view.findViewById(R.id.afbrydelse);
 
-        String [] text = new String [11];
-        text[0] = "At udtale to bogstaver eller blot et betydningsbærende bogstav, medmindre det bliver sagt i forglemmelse og at det er lidt.";
+        String text = "";
+        switch (mPage) {
+            case 0:
+                text = getString(R.string.afbrydelse_0);
+                break;
+            case 1:
+                text = getString(R.string.afbrydelse_1);
+                break;
+            case 2:
+                text = getString(R.string.afbrydelse_2);
+                break;
+            case 3:
+                text = getString(R.string.afbrydelse_3);
+                break;
+            case 4:
+                text = getString(R.string.afbrydelse_4);
+                break;
+            case 5:
+                text = getString(R.string.afbrydelse_5);
+                break;
+            case 6:
+                text = getString(R.string.afbrydelse_6);
+                break;
+            case 7:
+                text = getString(R.string.afbrydelse_7);
+                break;
+            case 8:
+                text = getString(R.string.afbrydelse_8);
+                break;
+            case 9:
+                text = getString(R.string.afbrydelse_9);
+                break;
+        }
 
-        text[1] = "At udføre mange bevægelser, hvilke ifølge nogle lærde er det, der rummer en rak^ah’s tid.";
-
-        text[2] = "At udføre en voldsom bevægelse såsom at springe.";
-
-        text[3] = "At tilføje en ekstra bevægelsessøjle.";
-
-        text[4] = "At udføre én bevægelse med hensigt at lege såsom at række tunge ad nogen.";
-
-        text[5] = "At spise eller at drikke, undtagen hvis man glemmer, at man er i bøn, og at det er lidt.";
-
-        text[6] = "At have til hensigt at afbryde bønnen.";
-
-        text[7] = "At lade hensigten om at afbryde bønnen afhænge af forekomsten af en hændelse.";
-
-        text[8] = "At tøve med at afbryde bønnen.";
-
-        text[9] = "At fuldføre en søjle alt imens man er i tvivl om, man har udført hensigten til at udføre bønnen eller ej under den indledende takbirah; \"Allahu akbar\", eller når tvivlen herom varer længe.";
-
-        tvTitle.setText(text[mPage]);
+        tvTitle.setText(text);
 
         return view;
     }

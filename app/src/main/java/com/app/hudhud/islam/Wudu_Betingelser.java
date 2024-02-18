@@ -2,14 +2,17 @@ package com.app.hudhud.islam;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
+import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager2.widget.ViewPager2;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.ogaclejapan.smarttablayout.SmartTabLayout;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 /**
  * Created by hudhud on 3/9/16.
@@ -17,30 +20,41 @@ import com.ogaclejapan.smarttablayout.SmartTabLayout;
 public class Wudu_Betingelser extends AppCompatActivity {
 
     Intent intent;
+    private final String[] tabTitles = {"1", "2", "3", "4", "5"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tabs);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new SampleFragmentPagerAdapter_Wudu_Betingelser(getSupportFragmentManager()));
+        ViewPager2 viewPager = findViewById(R.id.viewpager);
+        viewPager.setAdapter(new SampleFragmentPagerAdapter_Wudu_Betingelser(this));
 
-        // Give the PagerSlidingTabStrip the ViewPager
-        SmartTabLayout tabView = findViewById(R.id.main_tab_view);
-        tabView.setViewPager(viewPager);
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> {
+                    tab.setText(tabTitles[position]);
+                }
+        ).attach();
+
         Toolbar toolbar = findViewById(R.id.main_title);
-        toolbar.setTitle("Betingelser for renselse (Taharah)");
+        toolbar.setTitle("Wudus betingelser");
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        }
 
-//        getSupportActionBar().setTitle("Betingelser for renselse (Taharah)");
-//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#8b4513")));
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                finish();
+            }
+        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        new MenuInflater(this).inflate(R.menu.menu_main, menu);
-        return (super.onCreateOptionsMenu(menu));
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -50,10 +64,5 @@ public class Wudu_Betingelser extends AppCompatActivity {
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        finish();
     }
 }

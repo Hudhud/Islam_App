@@ -6,9 +6,10 @@
     android:background="@android:color/white"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/colorAccent"
         app:title="Kontakt os"
         app:titleTextColor="@android:color/white"/>
@@ -41,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ANNULLER"
-            style="?android:attr/borderlessButtonStyle"
+            style="?attr/borderlessButtonStyle"
             android:textColor="@color/colorAccent"
             android:background="@android:color/white"/>
 
@@ -50,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SEND"
-            style="?android:attr/borderlessButtonStyle"
+            style="?attr/borderlessButtonStyle"
             android:textColor="@color/colorAccent"
             android:background="@android:color/white"/>
     </LinearLayout>

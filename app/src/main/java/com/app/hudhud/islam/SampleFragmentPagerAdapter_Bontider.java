@@ -1,30 +1,26 @@
 package com.app.hudhud.islam;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class SampleFragmentPagerAdapter_Bontider extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 1;
-    private String tabTitles[] = new String[] {"Hvordan indtræder bønnerne?"};
+public class SampleFragmentPagerAdapter_Bontider extends FragmentStateAdapter {
+    private static final int PAGE_COUNT = 1;
 
-    public SampleFragmentPagerAdapter_Bontider(FragmentManager fm) {
-        super(fm);
+    public SampleFragmentPagerAdapter_Bontider(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return PAGE_COUNT;
-    }
-
-    @Override
-    public Fragment getItem(int position) {
+    public Fragment createFragment(int position) {
         return PageFragment_Bontider.newInstance(position);
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+    public int getItemCount() {
+        // Return the number of pages
+        return PAGE_COUNT;
     }
 }

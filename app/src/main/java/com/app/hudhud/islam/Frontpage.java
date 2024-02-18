@@ -1,17 +1,13 @@
 package com.app.hudhud.islam;
 
-import android.app.Fragment;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
@@ -19,6 +15,10 @@ import android.widget.ExpandableListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
+
+import androidx.activity.OnBackPressedCallback;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,12 +30,11 @@ import java.util.List;
 public class Frontpage extends AppCompatActivity {
 
     private ViewSwitcher switcher;
-    private ExpandableListAdapter listAdapter;
     private ExpandableListView expListView;
     private List<String> listDataHeader;
     private HashMap<String, List<String>> listDataChild;
     protected Intent intent;
-//    private ImageView image;
+    private ExpandableListAdapter listAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -43,8 +42,6 @@ public class Frontpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.frontpage);
         final Context ctx= this;
-
-//        image = (ImageView) findViewById(R.id.imageView3);
 
         switcher = (ViewSwitcher) findViewById(R.id.switcher);
         switcher.setDisplayedChild(1);
@@ -62,41 +59,38 @@ public class Frontpage extends AppCompatActivity {
         // setting list adapter
         expListView.setAdapter(listAdapter);
 
-        findViewById(R.id.contactfab).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Frontpage.this);
+        findViewById(R.id.contactfab).setOnClickListener(view -> {
+            final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Frontpage.this);
 
-                LayoutInflater inflater = Frontpage.this.getLayoutInflater();
-                View dialogView = inflater.inflate(R.layout.dialog_contact, null);
-                dialogBuilder.setView(dialogView);
-                final EditText editText = (EditText) dialogView.findViewById(R.id.contactText);
-                editText.setText("");
-                final AlertDialog dialog = dialogBuilder.create();
-                dialogView.findViewById(R.id.send_button).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        String [] reciever = new String[]{"appfeedback@hotmail.com"};
-                        String subject = ("Feedback/spørgsmål");
-                        Intent mailIntent = new Intent(Intent.ACTION_SEND);
-                        mailIntent.putExtra(Intent.EXTRA_EMAIL, reciever);
-                        mailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
-                        mailIntent.putExtra(Intent.EXTRA_TEXT, editText.getText().toString());
-                        mailIntent.setType("message/rfc822");
-                        startActivity(Intent.createChooser(mailIntent, "Vælg en applikation til at sende din mail med"));
-                    }
-                });
+            LayoutInflater inflater = Frontpage.this.getLayoutInflater();
+            View dialogView = inflater.inflate(R.layout.dialog_contact, null);
+            dialogBuilder.setView(dialogView);
+            final EditText editText = (EditText) dialogView.findViewById(R.id.contactText);
+            editText.setText("");
+            final AlertDialog dialog = dialogBuilder.create();
+            dialogView.findViewById(R.id.send_button).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String [] reciever = new String[]{"appfeedback@hotmail.com"};
+                    String subject = ("Feedback/spørgsmål");
+                    Intent mailIntent = new Intent(Intent.ACTION_SEND);
+                    mailIntent.putExtra(Intent.EXTRA_EMAIL, reciever);
+                    mailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                    mailIntent.putExtra(Intent.EXTRA_TEXT, editText.getText().toString());
+                    mailIntent.setType("message/rfc822");
+                    startActivity(Intent.createChooser(mailIntent, "Vælg en applikation til at sende din mail med"));
+                }
+            });
 
-                dialogView.findViewById(R.id.cancel_button).setOnClickListener(new View.OnClickListener()
-                {
-                    @Override
-                    public void onClick(View view) {
-                        dialog.cancel();
-                    }
-                });
+            dialogView.findViewById(R.id.cancel_button).setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View view) {
+                    dialog.cancel();
+                }
+            });
 
-                dialog.show();
-            }
+            dialog.show();
         });
 
         expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener()
@@ -158,13 +152,6 @@ public class Frontpage extends AppCompatActivity {
                                     "I alt har der eksisteret ca. 124.000 profeter. Iblandt det, profeterne har tilfælles, er, at de alle kom med religionen islam." +
                                     " Nogle af profeterne var sendebud, hvilket er en profet, som har fået åbenbaret en ny lovgivning.\n" +
                                     "Profeten Adam var det første sendebud og den første profet, mens profeten Muhammad var det sidste sendebud og den sidste profet.");
-//                            Fragment fragment = new Profet();
-//                            getFragmentManager().beginTransaction()
-//                                    .add(R.id.kontaktfrag, fragment)
-//                                    .addToBackStack(null)
-//                                    .commit();
-//                            switcher.setDisplayedChild(0);
-//                            image.setVisibility(View.GONE);
                             break;
                         case 1:
                             intent = new Intent(getApplicationContext(), Egenskaber_Profeter.class);
@@ -233,13 +220,6 @@ public class Frontpage extends AppCompatActivity {
                             ShowMsg("Enhver ansvarlig muslim er pålagt at faste Ramadan-måneden, dog er fasten ugyldig fra kvinden under efterfødsels - eller menstruationsperiode; de skal dog begge indhente de mistede dage. \n" +
                                     "\nAt bryde fasten er tilladt for den syge person, der ikke kan udholde fasten, den gravide eller ammende kvinde, der frygter skade for sig selv eller barnet samt den, der er på en lang rejse (ca. 50km) selvom vedkommende ikke møder strabadser under sin rejse." +
                                     " Det er dem dog forpligtet at indhente de mistede dage.");
-//                            Fragment fragment = new Fasten();
-//                            getFragmentManager().beginTransaction()
-//                                    .add(R.id.kontaktfrag, fragment)
-//                                    .addToBackStack(null)
-//                                    .commit();
-//                            switcher.setDisplayedChild(0);
-//                            image.setVisibility(View.GONE);
                             break;
                         case 1:
                             intent = new Intent(getApplicationContext(), Fasten_Sojler.class);
@@ -252,14 +232,6 @@ public class Frontpage extends AppCompatActivity {
                                     "\n\nDet er dog gyldigt at faste den sidste halvdel af Sha^ban-måneden, hvis man forbinder fasten af disse dage med dagene før dem, eller ved indhentning af fasten (qada´), " +
                                     "opfyldelse af løfter (nadhr), eller vanemæssig belønningsværdig praksis (wird), " +
                                     "såsom den person, der har til vane at faste hver mandag og torsdag.");
-//                            Fragment fragment1 = new Fasten_Dage();
-//                            getFragmentManager().beginTransaction()
-//                                    .add(R.id.kontaktfrag, fragment1)
-//                                    .addToBackStack(null)
-//                                    .commit();
-//                            switcher.setDisplayedChild(0);
-//                            image.setVisibility(View.GONE);
-
                         default:
                             break;
                     }
@@ -268,21 +240,8 @@ public class Frontpage extends AppCompatActivity {
                 return false;
             }
         });
-    }
 
-    @Override
-    public void onBackPressed() {
-        if (getFragmentManager().getBackStackEntryCount() == 0) {
-            this.finish();
-            switcher.setDisplayedChild(1);
-//            getSupportActionBar().setTitle("Islams Fundament");
-//            image.setVisibility(View.VISIBLE);
-        } else {
-            getFragmentManager().popBackStack();
-            switcher.setDisplayedChild(1);
-//            getSupportActionBar().setTitle("Islams Fundament");
-//            image.setVisibility(View.VISIBLE);
-        }
+
     }
 
     @Override
@@ -291,41 +250,6 @@ public class Frontpage extends AppCompatActivity {
         return (super.onCreateOptionsMenu(menu));
     }
 
-    public void setActionBarTitle(String title){
-//        getSupportActionBar().setTitle(title);
-    }
-
-   /* @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        if (item.getItemId() == R.id.Kontakt) {
-            Fragment fragment = new Kontakt();
-            getFragmentManager().beginTransaction()
-                    .add(R.id.kontaktfrag, fragment)
-                    .addToBackStack(null)
-                    .commit();
-            switcher.setDisplayedChild(0);
-//            image.setVisibility(View.GONE);
-        } else if (item.getItemId() == R.id.følgfb) {
-            launhFBgroup();
-        } else if (item.getItemId() == R.id.følgyt) {
-            launhyt();
-        }
-        return super.onOptionsItemSelected(item);
-    } */
-
-   /* private void launhFBgroup() {
-        String FBURL = "https://www.facebook.com/groups/539057376281241/";
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(FBURL));
-        startActivity(browserIntent);
-    }
-
-    private void launhyt() {
-        String YTURL = "https://www.youtube.com/channel/UCOkx6g7Kv8JuuhjFwyzgNbQ";
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(YTURL));
-        startActivity(browserIntent);
-    }*/
-
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
@@ -333,7 +257,7 @@ public class Frontpage extends AppCompatActivity {
         listDataHeader.add("Allah");
         listDataHeader.add("Profeterne");
         listDataHeader.add("Konvertering til islam");
-        listDataHeader.add("Wudu'");
+        listDataHeader.add("Wudu");
         listDataHeader.add("Bønnen");
         listDataHeader.add("Fasten");
 
@@ -397,5 +321,3 @@ public class Frontpage extends AppCompatActivity {
         builder.show();
     }
 }
-
-
